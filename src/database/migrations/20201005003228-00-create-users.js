@@ -12,16 +12,16 @@ module.exports = {
         primaryKey: true,
       },
       name: {
-        type: Sequelize.INTEGER,
+        type: Sequelize.STRING,
         allowNull: false,
       },
       email: {
-        type: Sequelize.INTEGER,
+        type: Sequelize.STRING,
         allowNull: false,
         unique: true,
       },
       password_hash: {
-        type: Sequelize.INTEGER,
+        type: Sequelize.STRING,
         allowNull: false,
       },
       provider: {
@@ -33,7 +33,7 @@ module.exports = {
         type: Sequelize.DATE,
         allowNull: false,
       },
-      updated: {
+      updated_at: {
         type: Sequelize.DATE,
         allowNull: false,
       },
