@@ -50,7 +50,8 @@ class AppointmentController {
 
     const { provider_id, date } = req.body;
 
-    // Check if provider selected by user is a provider
+    // Check if provider selected by user is actully a provider and ensure no
+    // schedules are registered to self
     const isProvider = await User.findOne({
       where: { id: provider_id, provider: true },
     });
@@ -59,6 +60,12 @@ class AppointmentController {
       return res
         .status(401)
         .json({ error: "Appointments can only be assigned to providers." });
+    }
+
+    if (provider_id === req.userId) {
+      return res
+        .status(401)
+        .json({ error: "You can't make appointments in your own schedule." });
     }
 
     // Ensure no past dates are scheduled
