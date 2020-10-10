@@ -9,6 +9,10 @@ src="https://img.shields.io/badge/nodejs-green?labelColor=green&logo=node.js&log
 src="https://img.shields.io/badge/git-grey?labelColor=greu&logo=git&logoColor=white"> 
 <img alt="postgres" 
 	src="https://img.shields.io/badge/postgres-blue?labelColor=blue&logo=postgres&logoColor=white">
+<img alt="docker" 
+	src="https://img.shields.io/badge/docker-blue?labelColor=blue&logo=docker&logoColor=white">
+<img alt="mongodb" 
+	src="https://img.shields.io/badge/mongodb-darkgreen?labelColor=darkgreen&logo=mongodb&logoColor=white">  
 </p>
 
 <p>
